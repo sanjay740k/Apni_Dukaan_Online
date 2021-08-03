@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:title="@string/search"
+        android:id="@+id/search_op"
+        android:icon="@drawable/ic_baseline_search_24"
+        app:showAsAction="ifRoom"
+        app:actionViewClass="androidx.appcompat.widget.SearchView">
+    </item>
+
+    <item
+        android:title="@string/register_as_shopkeeper"
+        android:id="@+id/Register_as_shopkeeper_op"
+        app:showAsAction="never">
+    </item>
+
+    <item
+        android:title="@string/add_shop"
+        android:id="@+id/add_shop_op"
+        app:showAsAction="never">
+    </item>
+
+    <item
+        android:title="@string/your_shops"
+        android:id="@+id/your_shops_op"
+        app:showAsAction="never">
+    </item>
+
+    <item
+        android:title="@string/settings"
+        android:id="@+id/setting_op"
+        app:showAsAction="never">
+    </item>
+
+    <item
+        android:title="@string/logout"
+        android:id="@+id/main_logout"
+        app:showAsAction="never">
+    </item>
+
+</menu>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".LoginWithMobileNumberActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="36sp"
+        android:text="@string/log_in"
+        android:layout_marginTop="108dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"/>
+
+    <EditText
+        android:id="@+id/loginWithMobileNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="260dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:digits="0123456789"
+        android:drawableStart="@drawable/ic_baseline_phone_24"
+        android:drawablePadding="10dp"
+        android:hint="@string/enter_your_mobile_number"
+        android:inputType="phone"
+        android:maxLength="10"
+        android:autofillHints="" />
+
+    <Button
+        android:id="@+id/login_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/loginWithMobileNumber"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="@string/login"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:background="@drawable/buttons"/>
+
+    <TextView
+        android:id="@+id/loginWithEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_button"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="25dp"
+        android:text="@string/login_with_email"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:textStyle="bold"/>
+
+</RelativeLayout>

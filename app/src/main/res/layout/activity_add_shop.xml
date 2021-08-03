@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddShopActivity">
+
+    <ScrollView
+        android:id="@+id/addScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="40dp"
+        tools:ignore="UselessParent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/addShopShopName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:hint="@string/shop_name"
+                android:textSize="18sp"
+                android:padding="10dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="80dp"
+                android:autofillHints=""/>
+
+            <EditText
+                android:id="@+id/addShopShopkeeperName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/addShopShopName"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:hint="@string/shopkeeper_name"
+                android:textSize="18sp"
+                android:padding="10dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:autofillHints=""/>
+
+            <EditText
+                android:id="@+id/addShopShopkeeperMobileNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/addShopShopkeeperName"
+                android:ems="10"
+                android:inputType="phone"
+                android:hint="@string/mobile_number"
+                android:textSize="18sp"
+                android:padding="10dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:autofillHints=""
+                tools:ignore="LabelFor" />
+
+            <EditText
+                android:id="@+id/addShopCityName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/addShopShopkeeperMobileNumber"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:hint="@string/city_name"
+                android:textSize="18sp"
+                android:padding="10dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:autofillHints=""
+                tools:ignore="LabelFor" />
+
+            <EditText
+                android:id="@+id/addShopPostalAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/addShopCityName"
+                android:ems="10"
+                android:inputType="textPostalAddress"
+                android:hint="@string/address"
+                android:textSize="18sp"
+                android:padding="10dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:autofillHints=""
+                tools:ignore="LabelFor" />
+
+            <TextView
+                android:id="@+id/save"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/addShopPostalAddress"
+                android:layout_centerHorizontal="true"
+                android:gravity="center_horizontal"
+                android:text="@string/save"
+                android:textSize="20sp"
+                android:padding="10dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/buttons"
+                android:autofillHints="" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+</RelativeLayout>

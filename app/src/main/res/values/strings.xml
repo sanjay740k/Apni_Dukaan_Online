@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">Online Shopping</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+
+    <string name="search">Search</string>
+    <string name="sort_by">Sort by</string>
+    <string name="higher_priority">Higher Priority</string>
+    <string name="lower_priority">Lower Priority</string>
+    <string name="settings">Settings</string>
+    <string name="logout">Logout</string>
+    <string name="title">Title</string>
+    <string name="description">Description</string>
+    <string name="_01_01_2021">01/01/2021</string>
+    <string name="_06_00_am">06:00 AM</string>
+    <string name="save">SAVE</string>
+    <string name="log_in">Log In!</string>
+    <string name="email">Email…</string>
+    <string name="password">Password…</string>
+    <string name="forgot_password">Forgot Password ?</string>
+    <string name="login">Login</string>
+    <string name="sign_up">Sign Up!</string>
+    <string name="create_account">Create Account</string>
+    <string name="add_shop">Add Shop</string>
+    <string name="your_shops">Your Shops</string>
+    <string name="shop_name">Shop Name</string>
+    <string name="shopkeeper_name">Shopkeeper Name</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="address">Address</string>
+    <string name="city_name">City Name</string>
+    <string name="register_as_shopkeeper">Register as shopkeeper</string>
+    <string name="enter_verification_code">enter otp</string>
+    <string name="enter_your_mobile_number">enter your mobile number</string>
+    <string name="login_with_email">Login with email</string>
+    <string name="profile">Profile</string>
+</resources>

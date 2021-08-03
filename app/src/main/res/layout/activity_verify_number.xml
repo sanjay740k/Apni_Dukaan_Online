@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".RegisterActivity">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="36sp"
+            android:text="@string/log_in"
+            android:layout_marginTop="160dp"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/white"/>
+
+        <EditText
+            android:id="@+id/verifyNumberOTP"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="240dp"
+            android:digits="0123456789"
+            android:drawablePadding="10dp"
+            android:hint="@string/enter_verification_code"
+            android:inputType="phone"
+            android:maxLength="10"
+            android:autofillHints="" />
+
+        <Button
+            android:id="@+id/verifyNumberLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/verifyNumberOTP"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="30dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:background="@drawable/buttons"
+            android:text="@string/login"
+            android:textAllCaps="false"
+            android:textColor="@color/cardview_light_background"
+            android:textSize="18sp"/>
+
+</RelativeLayout>
