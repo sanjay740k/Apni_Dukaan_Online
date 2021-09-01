@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ShopInfo.ShopInfo">
+
+    <ScrollView
+        android:id="@+id/infoScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="40dp"
+        tools:ignore="UselessParent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/information_of_shop"
+                android:layout_centerHorizontal="true"
+                android:textSize="18sp"
+                android:padding="10dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="40dp"/>
+
+            <TextView
+                android:id="@+id/infoShopName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/shop_name"
+                android:textSize="18sp"
+                android:padding="10dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="80dp"/>
+
+            <TextView
+                android:id="@+id/infoShopkeeperName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/infoShopName"
+                android:text="@string/shopkeeper_name"
+                android:textSize="18sp"
+                android:padding="10dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"/>
+
+            <TextView
+                android:id="@+id/infoShopkeeperMobileNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/infoShopkeeperName"
+                android:text="@string/mobile_number"
+                android:textSize="18sp"
+                android:padding="10dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp" />
+
+            <TextView
+                android:id="@+id/infoCityName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/infoShopkeeperMobileNumber"
+                android:text="@string/city_name"
+                android:textSize="18sp"
+                android:padding="10dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp" />
+
+            <TextView
+                android:id="@+id/infoPostalAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/infoCityName"
+                android:text="@string/address"
+                android:textSize="18sp"
+                android:padding="10dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+</RelativeLayout>

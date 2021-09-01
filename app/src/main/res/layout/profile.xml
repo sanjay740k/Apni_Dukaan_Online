@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="40dp"
+    tools:context=".Profile">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/curUserName"
+        android:layout_marginTop="50dp"
+        android:text="@string/name"
+        android:textSize="24sp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/enterUserName"
+        android:layout_marginTop="50dp"
+        android:hint="@string/name"
+        android:textSize="24sp"
+        android:visibility="invisible"
+        android:autofillHints=""
+        tools:ignore="TextFields" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/yourCity"
+        android:layout_below="@+id/curUserName"
+        android:layout_marginTop="20dp"
+        android:text="@string/city"
+        android:textSize="24sp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/enterYourCity"
+        android:layout_below="@+id/curUserName"
+        android:layout_marginTop="20dp"
+        android:hint="@string/city"
+        android:textSize="24sp"
+        android:visibility="invisible"
+        tools:ignore="TextFields"
+        android:autofillHints="" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/yourAddress"
+        android:layout_below="@+id/yourCity"
+        android:layout_marginTop="20dp"
+        android:text="@string/address"
+        android:textSize="24sp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/enterYourAddress"
+        android:layout_below="@+id/yourCity"
+        android:layout_marginTop="20dp"
+        android:hint="@string/address"
+        android:textSize="24sp"
+        android:visibility="invisible"
+        tools:ignore="TextFields"
+        android:autofillHints="" />
+
+    <Button
+        android:id="@+id/editProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/yourAddress"
+        android:layout_marginTop="80dp"
+        android:layout_centerHorizontal="true"
+        android:text="@string/edit"
+        android:textSize="24sp"
+        android:textColor="@color/white"
+        android:background="@drawable/buttons"/>
+
+    <Button
+        android:id="@+id/saveProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/yourAddress"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:text="@string/save"
+        android:textSize="24sp"
+        android:textColor="@color/white"
+        android:background="@drawable/buttons"
+        android:visibility="invisible"/>
+
+</RelativeLayout>

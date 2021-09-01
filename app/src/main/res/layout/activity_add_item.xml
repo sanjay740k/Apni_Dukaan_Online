@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddItemDetail$AddItem">
+
+    <TextView
+        android:id="@+id/hadding"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/add_an_item"
+        android:layout_marginTop="80dp"
+        android:textSize="30sp"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:id="@+id/addItemName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/hadding"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="20dp"
+        android:hint="@string/item_name"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+        android:textSize="24sp"
+        android:inputType="text"
+        android:autofillHints="" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/addItemPrice"
+        android:layout_below="@+id/addItemName"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:textSize="24sp"
+        android:maxLines="1"
+        android:hint="@string/price"
+        android:inputType="text"
+        android:autofillHints="" />
+
+    <Button
+        android:id="@+id/saveThisItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/addItemPrice"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="@string/save"
+        android:textAllCaps="false"
+        android:textSize="24sp"
+        android:textColor="@color/white"
+        android:background="@drawable/buttons"/>
+
+</RelativeLayout>
