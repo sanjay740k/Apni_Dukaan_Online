@@ -1,10 +1,12 @@
 package com.example.onlineshopping.AddItemType;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.annotation.SuppressLint;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
@@ -33,10 +35,16 @@ public class AddItemType extends AppCompatActivity {
     private EditText addNewItem;
     private TextView addItem, saveItem;
 
+    @SuppressLint("UseCompatLoadingForDrawables")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_item_type);
+
+        ActionBar actionBar = getSupportActionBar();
+        if (actionBar != null) {
+            actionBar.setBackgroundDrawable(getResources().getDrawable(R.drawable.background));
+        }
 
         addNewItem = findViewById(R.id.addNewItemType);
         addItem = findViewById(R.id.newItemType);
