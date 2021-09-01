@@ -11,6 +11,9 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.onlineshopping.DataType.Shop;
+import com.example.onlineshopping.ShowShop.ShowShopsActivity;
+
 import java.util.List;
 
 public class ShopCitiesActivity extends RecyclerView.Adapter<ShopCitiesActivity.ListViewHolder> {
@@ -35,7 +38,7 @@ public class ShopCitiesActivity extends RecyclerView.Adapter<ShopCitiesActivity.
         Shop shop = shops.get(position);
         holder.cityName.setText(shop.getCityName());
 
-        //holder.setListener(shop.getId());
+        holder.setListener(shop.getId());
     }
 
     @Override
@@ -45,44 +48,21 @@ public class ShopCitiesActivity extends RecyclerView.Adapter<ShopCitiesActivity.
 
     class ListViewHolder extends RecyclerView.ViewHolder {
         private final TextView cityName;
-        //private final String context;
 
         @SuppressLint("SetTextI18n")
         public ListViewHolder(View itemView) {
             super(itemView);
 
             cityName = itemView.findViewById(R.id.citiesCityName);
-            TextView cityDistance = itemView.findViewById(R.id.citiesCitydistance);
-            float x = (float) 0.0;
-            String s = Float.toString(x);
-            cityDistance.setText("Distance = "+ s +"KM");
+        }
 
-            itemView.setOnClickListener(v -> {
-
+        public void setListener(String id) {
+            itemView.setOnClickListener(v ->{
                 Intent intent = new Intent(context, ShowShopsActivity.class);
-                //intent.putExtra("city name", cityName.getText().toString());
+                intent.putExtra("uid", id);
+                intent.putExtra("city name", cityName.getText().toString());
                 context.startActivity(intent);
             });
         }
-
-        //public void setListener(String id){
-        //    deleteItem.setOnClickListener(v -> {
-        //        SharedPreferences sharedPreferences = context.getSharedPreferences("sharedNotes", Context.MODE_PRIVATE);
-        //        sharedPreferences.edit().remove(id).apply();
-        //        position = getAdapterPosition();
-        //        removeItemFromList(position);
-        //    });
-        //}
     }
-
-    //private void removeItemFromList(int position) {
-
-    //    shops.remove(position);
-    //    notifyItemRemoved(position);
-    //}
-
-    //public static Bitmap decodeBase64(String input) {
-    //    byte[] decodedByte = Base64.decode(input, 0);
-    //    return BitmapFactory.decodeByteArray(decodedByte, 0, decodedByte.length);
-    //}
 }

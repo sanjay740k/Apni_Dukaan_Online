@@ -1,12 +1,12 @@
-package com.example.onlineshopping;
+package com.example.onlineshopping.DataType;
 
 public class Shop {
     private final String id;
-    private final String name, shopkeeperName, shopkeeperMobileNumber, cityName, address;
+    private final String shopName, shopkeeperName, shopkeeperMobileNumber, cityName, address;
 
-    public Shop(String id, String name, String shopkeeperName, String shopkeeperMobileNumber, String cityName, String address) {
+    public Shop(String id, String shopName, String shopkeeperName, String shopkeeperMobileNumber, String cityName, String address) {
         this.id = id;
-        this.name = name;
+        this.shopName = shopName;
         this.shopkeeperName = shopkeeperName;
         this.shopkeeperMobileNumber = shopkeeperMobileNumber;
         this.cityName = cityName;
@@ -17,8 +17,8 @@ public class Shop {
         return id;
     }
 
-    public String getName() {
-        return name;
+    public String getShopName() {
+        return shopName;
     }
 
     public String getShopkeeperName() {

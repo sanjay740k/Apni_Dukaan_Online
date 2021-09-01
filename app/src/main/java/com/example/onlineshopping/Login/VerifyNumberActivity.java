@@ -1,4 +1,4 @@
-package com.example.onlineshopping;
+package com.example.onlineshopping.Login;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -7,6 +7,8 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.onlineshopping.MainActivity;
+import com.example.onlineshopping.R;
 import com.google.firebase.auth.PhoneAuthOptions;
 import com.google.firebase.auth.PhoneAuthProvider;
 import com.google.firebase.FirebaseException;
@@ -15,6 +17,8 @@ import com.google.firebase.auth.FirebaseAuthInvalidCredentialsException;
 import com.google.firebase.auth.PhoneAuthCredential;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+
+import org.jetbrains.annotations.NotNull;
 
 import java.util.concurrent.TimeUnit;
 
@@ -75,7 +79,7 @@ public class VerifyNumberActivity extends AppCompatActivity {
         }
 
         @Override
-        public void onCodeSent(String s, PhoneAuthProvider.ForceResendingToken forceResendingToken) {
+        public void onCodeSent(@NotNull String s, @NotNull PhoneAuthProvider.ForceResendingToken forceResendingToken) {
             super.onCodeSent(s, forceResendingToken);
             mVerificationId = s;
         }
@@ -91,11 +95,10 @@ public class VerifyNumberActivity extends AppCompatActivity {
         mAuth.signInWithCredential(credential)
                 .addOnCompleteListener(VerifyNumberActivity.this, task -> {
                     if (task.isSuccessful()) {
-                        //DatabaseReference ref = FirebaseDatabase.getInstance().getReference("Users").child(mobileNumber);
-                        //ref.setValue("");
-                        //ref.keepSynced(true);
-                        Intent intent = new Intent(VerifyNumberActivity.this, MainActivity.class);
+                        
+                        Intent intent = new Intent(VerifyNumberActivity.this, RegisterActivity.class);
                         intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                        intent.putExtra("mobile", mobileNumber);
                         startActivity(intent);
                     }
                     else {
@@ -103,6 +106,7 @@ public class VerifyNumberActivity extends AppCompatActivity {
                         if (task.getException() instanceof FirebaseAuthInvalidCredentialsException) {
                             message = "Invalid code entered...";
                         }
+                        Toast.makeText(this,message,Toast.LENGTH_LONG).show();
                     }
                 });
     }

@@ -3,34 +3,49 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <item
-        android:title="@string/search"
-        android:id="@+id/search_op"
-        android:icon="@drawable/ic_baseline_search_24"
+        android:id="@+id/my_cart_op"
+        android:icon="@drawable/ic_baseline_shopping_cart_24"
         app:showAsAction="ifRoom"
-        app:actionViewClass="androidx.appcompat.widget.SearchView">
+        android:title="@string/my_cart">
+    </item>
+
+    <item
+        android:title="@string/profile"
+        android:id="@+id/profile_op"
+        app:showAsAction="never">
     </item>
 
     <item
         android:title="@string/register_as_shopkeeper"
         android:id="@+id/Register_as_shopkeeper_op"
+        android:visible="false"
         app:showAsAction="never">
     </item>
 
     <item
-        android:title="@string/add_shop"
         android:id="@+id/add_shop_op"
+        android:title="@string/add_shop"
+        android:visible="false"
         app:showAsAction="never">
     </item>
 
     <item
-        android:title="@string/your_shops"
         android:id="@+id/your_shops_op"
+        android:title="@string/your_shops"
+        android:visible="false"
         app:showAsAction="never">
     </item>
 
     <item
-        android:title="@string/settings"
-        android:id="@+id/setting_op"
+        android:id="@+id/your_shop_orders_op"
+        android:title="@string/your_shop_orders"
+        android:visible="false"
+        app:showAsAction="never">
+    </item>
+
+    <item
+        android:id="@+id/my_orders_op"
+        android:title="@string/my_orders"
         app:showAsAction="never">
     </item>
 

@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Online Shopping</string>
+    <string name="app_name">Apni Dukan</string>
     <string name="title_activity_login">LoginActivity</string>
     <string name="prompt_email">Email</string>
     <string name="prompt_password">Password</string>
@@ -28,8 +28,8 @@
     <string name="login">Login</string>
     <string name="sign_up">Sign Up!</string>
     <string name="create_account">Create Account</string>
-    <string name="add_shop">Add Shop</string>
-    <string name="your_shops">Your Shops</string>
+    <string name="add_shop">Add Or Update Shop Info</string>
+    <string name="your_shops">Your Shop</string>
     <string name="shop_name">Shop Name</string>
     <string name="shopkeeper_name">Shopkeeper Name</string>
     <string name="mobile_number">Mobile Number</string>
@@ -40,4 +40,32 @@
     <string name="enter_your_mobile_number">enter your mobile number</string>
     <string name="login_with_email">Login with email</string>
     <string name="profile">Profile</string>
+    <string name="info">Info</string>
+    <string name="information_of_shop">Information of Shop</string>
+    <string name="minus">-</string>
+    <string name="count">1</string>
+    <string name="plus">+</string>
+    <string name="price">Price</string>
+    <string name="item_name">Item Name</string>
+    <string name="total_price">Total Price</string>
+    <string name="add_new_item_type">Add new Item Type</string>
+    <string name="please_write_item_type">Please write item type</string>
+    <string name="add">Add</string>
+    <string name="add_to_cart">Add to cart</string>
+    <string name="add_an_item">Add an Item</string>
+    <string name="remove">Remove</string>
+    <string name="my_cart">My Cart</string>
+    <string name="my_orders">My Orders</string>
+    <string name="your_shop_orders">Your Shop Orders</string>
+    <string name="order_now">Order Now</string>
+    <string name="cancel_order">Cancel Order</string>
+    <string name="username">Username…</string>
+    <string name="name">Name</string>
+    <string name="edit">Edit</string>
+    <string name="_917389695730">+917389695730</string>
+    <string name="city">City</string>
+    <string name="list_of_cities">List of cities</string>
+    <string name="list_of_shops">List of shops</string>
+    <string name="_1">1</string>
+    <string name="qty">Qty - </string>
 </resources>
