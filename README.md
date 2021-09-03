@@ -11,7 +11,7 @@ These options are available only for shopkeepers.
 # Customer
 These pages are available to everyone.
 
-<img src="https://user-images.githubusercontent.com/68817302/131803187-c4cb994e-1033-4314-85a1-87851f6953ba.jpeg" height="450"> | <img src="https://user-images.githubusercontent.com/68817302/131803182-9e63a0c7-bf43-4c7e-a437-4e4f40fb0acf.jpeg"    height="450"> | <img src="https://user-images.githubusercontent.com/68817302/131803180-e3664c46-5433-4d33-81af-288e4e2e8218.jpeg"    height="450">
+<img src="https://user-images.githubusercontent.com/68817302/131803187-c4cb994e-1033-4314-85a1-87851f6953ba.jpeg" height="450"> | <img src="https://user-images.githubusercontent.com/68817302/131803182-9e63a0c7-bf43-4c7e-a437-4e4f40fb0acf.jpeg"    height="450"> | <img src="https://user-images.githubusercontent.com/68817302/131965858-cb4dc962-0fe2-4469-976d-c9437a35a947.jpeg"    height="450">
 
 <img src="https://user-images.githubusercontent.com/68817302/131803162-1f77e805-14a3-4c4b-98ac-4d8d358dffe5.jpeg" height="450"> | <img src="https://user-images.githubusercontent.com/68817302/131803146-7aeec457-4d4a-465a-96cf-5ade5364bd25.jpeg"    height="450"> | <img src="https://user-images.githubusercontent.com/68817302/131803151-35943e09-6026-4018-b4e0-a3eb8674df88.jpeg"    height="450">
 
